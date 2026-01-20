@@ -1,0 +1,367 @@
+[
+  { "id": "1", "title": "PUBG Mobile", "coverPhoto": "https://example.com/pubg.png", "category": "Battle Royale", "downloadLink": "https://www.pubgmobile.com", "description": "Battle royale survival shooter.", "ratings": 4.5, "developer": "Krafton" },
+
+  { "id": "2", "title": "Call of Duty: Warzone", "coverPhoto": "https://example.com/warzone.png", "category": "FPS", "downloadLink": "https://www.callofduty.com/warzone", "description": "Large-scale FPS battle royale.", "ratings": 4.6, "developer": "Activision" },
+
+  { "id": "3", "title": "Apex Legends", "coverPhoto": "https://example.com/apex.png", "category": "Battle Royale", "downloadLink": "https://www.ea.com/games/apex-legends", "description": "Fast-paced hero battle royale.", "ratings": 4.7, "developer": "Respawn Entertainment" },
+
+  { "id": "4", "title": "Valorant", "coverPhoto": "https://example.com/valorant.png", "category": "FPS", "downloadLink": "https://playvalorant.com", "description": "Tactical 5v5 shooter.", "ratings": 4.6, "developer": "Riot Games" },
+
+  { "id": "5", "title": "Counter-Strike 2", "coverPhoto": "https://example.com/cs2.png", "category": "FPS", "downloadLink": "https://store.steampowered.com", "description": "Competitive tactical shooter.", "ratings": 4.8, "developer": "Valve" },
+
+  { "id": "6", "title": "Elden Ring", "coverPhoto": "https://example.com/eldenring.png", "category": "RPG", "downloadLink": "https://en.bandainamcoent.eu", "description": "Open-world action RPG.", "ratings": 4.9, "developer": "FromSoftware" },
+
+  { "id": "7", "title": "The Witcher 3", "coverPhoto": "https://example.com/witcher3.png", "category": "RPG", "downloadLink": "https://www.thewitcher.com", "description": "Story-driven fantasy RPG.", "ratings": 4.9, "developer": "CD Projekt Red" },
+
+  { "id": "8", "title": "Skyrim", "coverPhoto": "https://example.com/skyrim.png", "category": "RPG", "downloadLink": "https://elderscrolls.bethesda.net", "description": "Epic open-world RPG.", "ratings": 4.8, "developer": "Bethesda" },
+
+  { "id": "9", "title": "God of War", "coverPhoto": "https://example.com/gow.png", "category": "Action", "downloadLink": "https://www.playstation.com", "description": "Mythological action adventure.", "ratings": 4.9, "developer": "Santa Monica Studio" },
+
+  { "id": "10", "title": "Assassin's Creed Valhalla", "coverPhoto": "https://example.com/acv.png", "category": "Adventure", "downloadLink": "https://www.ubisoft.com", "description": "Viking-era open-world adventure.", "ratings": 4.4, "developer": "Ubisoft" },
+
+  { "id": "11", "title": "Red Dead Redemption 2", "coverPhoto": "https://example.com/rdr2.png", "category": "Adventure", "downloadLink": "https://www.rockstargames.com", "description": "Story-rich western adventure.", "ratings": 4.9, "developer": "Rockstar Games" },
+
+  { "id": "12", "title": "GTA V", "coverPhoto": "https://example.com/gtav.png", "category": "Action", "downloadLink": "https://www.rockstargames.com", "description": "Open-world crime action game.", "ratings": 4.8, "developer": "Rockstar Games" },
+
+  { "id": "13", "title": "Forza Horizon 5", "coverPhoto": "https://example.com/forza5.png", "category": "Racing", "downloadLink": "https://forzamotorsport.net", "description": "Open-world racing experience.", "ratings": 4.7, "developer": "Playground Games" },
+
+  { "id": "14", "title": "Need for Speed Heat", "coverPhoto": "https://example.com/nfsheat.png", "category": "Racing", "downloadLink": "https://www.ea.com", "description": "Street racing with police chases.", "ratings": 4.2, "developer": "EA" },
+
+  { "id": "15", "title": "FIFA 23", "coverPhoto": "https://example.com/fifa23.png", "category": "Sports", "downloadLink": "https://www.ea.com", "description": "Football simulation game.", "ratings": 4.3, "developer": "EA Sports" },
+
+  { "id": "16", "title": "NBA 2K23", "coverPhoto": "https://example.com/nba2k23.png", "category": "Sports", "downloadLink": "https://nba.2k.com", "description": "Basketball sports simulation.", "ratings": 4.2, "developer": "2K Sports" },
+
+  { "id": "17", "title": "Resident Evil Village", "coverPhoto": "https://example.com/re8.png", "category": "Horror", "downloadLink": "https://www.capcom.com", "description": "Survival horror experience.", "ratings": 4.6, "developer": "Capcom" },
+
+  { "id": "18", "title": "Outlast", "coverPhoto": "https://example.com/outlast.png", "category": "Horror", "downloadLink": "https://redbarrelsgames.com", "description": "Psychological horror survival.", "ratings": 4.5, "developer": "Red Barrels" },
+
+  { "id": "19", "title": "Phasmophobia", "coverPhoto": "https://example.com/phasmophobia.png", "category": "Horror", "downloadLink": "https://store.steampowered.com", "description": "Co-op ghost hunting horror.", "ratings": 4.6, "developer": "Kinetic Games" },
+
+  { "id": "20", "title": "Minecraft", "coverPhoto": "https://example.com/minecraft.png", "category": "Simulation", "downloadLink": "https://www.minecraft.net", "description": "Creative sandbox building.", "ratings": 4.9, "developer": "Mojang" },
+
+  { "id": "21", "title": "The Sims 4", "coverPhoto": "https://example.com/sims4.png", "category": "Simulation", "downloadLink": "https://www.ea.com", "description": "Life simulation game.", "ratings": 4.3, "developer": "Maxis" },
+
+  { "id": "22", "title": "Stellaris", "coverPhoto": "https://example.com/stellaris.png", "category": "Strategy", "downloadLink": "https://www.paradoxinteractive.com", "description": "Grand strategy in space.", "ratings": 4.6, "developer": "Paradox" },
+
+  { "id": "23", "title": "Civilization VI", "coverPhoto": "https://example.com/civ6.png", "category": "Strategy", "downloadLink": "https://civilization.com", "description": "Turn-based empire builder.", "ratings": 4.7, "developer": "Firaxis Games" },
+
+  { "id": "24", "title": "Age of Empires IV", "coverPhoto": "https://example.com/aoe4.png", "category": "Strategy", "downloadLink": "https://www.ageofempires.com", "description": "Real-time strategy warfare.", "ratings": 4.4, "developer": "Relic Entertainment" },
+
+  { "id": "25", "title": "Hades", "coverPhoto": "https://example.com/hades.png", "category": "Indie", "downloadLink": "https://www.supergiantgames.com", "description": "Roguelike dungeon crawler.", "ratings": 4.9, "developer": "Supergiant Games" },
+
+  { "id": "26", "title": "Dead Cells", "coverPhoto": "https://example.com/deadcells.png", "category": "Indie", "downloadLink": "https://dead-cells.com", "description": "Fast-paced roguevania.", "ratings": 4.8, "developer": "Motion Twin" },
+
+  { "id": "27", "title": "Stardew Valley", "coverPhoto": "https://example.com/stardew.png", "category": "Indie", "downloadLink": "https://www.stardewvalley.net", "description": "Relaxing farming simulator.", "ratings": 4.9, "developer": "ConcernedApe" },
+
+  { "id": "28", "title": "Celeste", "coverPhoto": "https://example.com/celeste.png", "category": "Indie", "downloadLink": "https://mattmakesgames.com", "description": "Precision platformer.", "ratings": 4.8, "developer": "Maddy Makes Games" },
+
+  { "id": "29", "title": "Portal 2", "coverPhoto": "https://example.com/portal2.png", "category": "Puzzle", "downloadLink": "https://store.steampowered.com", "description": "Mind-bending puzzle adventure.", "ratings": 4.9, "developer": "Valve" },
+
+  { "id": "30", "title": "The Witness", "coverPhoto": "https://example.com/witness.png", "category": "Puzzle", "downloadLink": "https://the-witness.net", "description": "Environmental puzzle game.", "ratings": 4.4, "developer": "Jonathan Blow" },
+
+
+   {
+    "id": "31",
+    "title": "Battlefield 2042",
+    "coverPhoto": "https://example.com/bf2042.png",
+    "category": "FPS",
+    "downloadLink": "https://www.ea.com/games/battlefield/battlefield-2042",
+    "description": "Large-scale multiplayer FPS warfare.",
+    "ratings": 4.1,
+    "developer": "DICE"
+  },
+  {
+    "id": "32",
+    "title": "Far Cry 6",
+    "coverPhoto": "https://example.com/farcry6.png",
+    "category": "FPS",
+    "downloadLink": "https://www.ubisoft.com",
+    "description": "Open-world FPS with guerrilla combat.",
+    "ratings": 4.3,
+    "developer": "Ubisoft"
+  },
+  {
+    "id": "33",
+    "title": "Fortnite",
+    "coverPhoto": "https://example.com/fortnite.png",
+    "category": "Battle Royale",
+    "downloadLink": "https://www.epicgames.com/fortnite",
+    "description": "Cartoon-style battle royale with building.",
+    "ratings": 4.6,
+    "developer": "Epic Games"
+  },
+  {
+    "id": "34",
+    "title": "Free Fire",
+    "coverPhoto": "https://example.com/freefire.png",
+    "category": "Battle Royale",
+    "downloadLink": "https://ff.garena.com",
+    "description": "Fast-paced mobile battle royale.",
+    "ratings": 4.2,
+    "developer": "Garena"
+  },
+  {
+    "id": "35",
+    "title": "Dark Souls III",
+    "coverPhoto": "https://example.com/darksouls3.png",
+    "category": "RPG",
+    "downloadLink": "https://en.bandainamcoent.eu",
+    "description": "Challenging dark fantasy RPG.",
+    "ratings": 4.8,
+    "developer": "FromSoftware"
+  },
+  {
+    "id": "36",
+    "title": "Cyberpunk 2077",
+    "coverPhoto": "https://example.com/cyberpunk.png",
+    "category": "RPG",
+    "downloadLink": "https://www.cyberpunk.net",
+    "description": "Futuristic open-world RPG.",
+    "ratings": 4.4,
+    "developer": "CD Projekt Red"
+  },
+  {
+    "id": "37",
+    "title": "Horizon Zero Dawn",
+    "coverPhoto": "https://example.com/hzd.png",
+    "category": "Adventure",
+    "downloadLink": "https://www.playstation.com",
+    "description": "Action-adventure in a robotic world.",
+    "ratings": 4.7,
+    "developer": "Guerrilla Games"
+  },
+  {
+    "id": "38",
+    "title": "Shadow of the Tomb Raider",
+    "coverPhoto": "https://example.com/tombraider.png",
+    "category": "Adventure",
+    "downloadLink": "https://tombraider.square-enix-games.com",
+    "description": "Exploration-driven action adventure.",
+    "ratings": 4.4,
+    "developer": "Eidos Montréal"
+  },
+  {
+    "id": "39",
+    "title": "Sekiro: Shadows Die Twice",
+    "coverPhoto": "https://example.com/sekiro.png",
+    "category": "Action",
+    "downloadLink": "https://www.activision.com",
+    "description": "Precision-based samurai action game.",
+    "ratings": 4.9,
+    "developer": "FromSoftware"
+  },
+  {
+    "id": "40",
+    "title": "Devil May Cry 5",
+    "coverPhoto": "https://example.com/dmc5.png",
+    "category": "Action",
+    "downloadLink": "https://www.capcom.com",
+    "description": "Stylish high-speed action combat.",
+    "ratings": 4.7,
+    "developer": "Capcom"
+  },
+  {
+    "id": "41",
+    "title": "Total War: Warhammer III",
+    "coverPhoto": "https://example.com/warhammer3.png",
+    "category": "Strategy",
+    "downloadLink": "https://www.totalwar.com",
+    "description": "Grand strategy with fantasy battles.",
+    "ratings": 4.5,
+    "developer": "Creative Assembly"
+  },
+  {
+    "id": "42",
+    "title": "Company of Heroes 2",
+    "coverPhoto": "https://example.com/coh2.png",
+    "category": "Strategy",
+    "downloadLink": "https://www.companyofheroes.com",
+    "description": "World War II real-time strategy.",
+    "ratings": 4.4,
+    "developer": "Relic Entertainment"
+  },
+  {
+    "id": "43",
+    "title": "Cities: Skylines",
+    "coverPhoto": "https://example.com/citiesskylines.png",
+    "category": "Simulation",
+    "downloadLink": "https://www.paradoxinteractive.com",
+    "description": "Modern city-building simulator.",
+    "ratings": 4.8,
+    "developer": "Colossal Order"
+  },
+  {
+    "id": "44",
+    "title": "Euro Truck Simulator 2",
+    "coverPhoto": "https://example.com/ets2.png",
+    "category": "Simulation",
+    "downloadLink": "https://eurotrucksimulator2.com",
+    "description": "Realistic truck driving simulator.",
+    "ratings": 4.7,
+    "developer": "SCS Software"
+  },
+  {
+    "id": "45",
+    "title": "Gran Turismo 7",
+    "coverPhoto": "https://example.com/gt7.png",
+    "category": "Racing",
+    "downloadLink": "https://www.gran-turismo.com",
+    "description": "Realistic racing simulation.",
+    "ratings": 4.6,
+    "developer": "Polyphony Digital"
+  },
+  {
+    "id": "46",
+    "title": "F1 23",
+    "coverPhoto": "https://example.com/f123.png",
+    "category": "Racing",
+    "downloadLink": "https://www.ea.com",
+    "description": "Formula 1 racing simulation.",
+    "ratings": 4.5,
+    "developer": "Codemasters"
+  },
+  {
+    "id": "47",
+    "title": "PES 2021",
+    "coverPhoto": "https://example.com/pes2021.png",
+    "category": "Sports",
+    "downloadLink": "https://www.konami.com",
+    "description": "Realistic football simulation.",
+    "ratings": 4.4,
+    "developer": "Konami"
+  },
+  {
+    "id": "48",
+    "title": "WWE 2K22",
+    "coverPhoto": "https://example.com/wwe2k22.png",
+    "category": "Sports",
+    "downloadLink": "https://wwe.2k.com",
+    "description": "Professional wrestling sports game.",
+    "ratings": 4.2,
+    "developer": "2K Games"
+  },
+  {
+    "id": "49",
+    "title": "Amnesia: The Dark Descent",
+    "coverPhoto": "https://example.com/amnesia.png",
+    "category": "Horror",
+    "downloadLink": "https://frictionalgames.com",
+    "description": "Atmospheric psychological horror.",
+    "ratings": 4.6,
+    "developer": "Frictional Games"
+  },
+  {
+    "id": "50",
+    "title": "Dead by Daylight",
+    "coverPhoto": "https://example.com/dbd.png",
+    "category": "Horror",
+    "downloadLink": "https://deadbydaylight.com",
+    "description": "Asymmetric multiplayer horror.",
+    "ratings": 4.5,
+    "developer": "Behaviour Interactive"
+  },
+  {
+    "id": "51",
+    "title": "Inside",
+    "coverPhoto": "https://example.com/inside.png",
+    "category": "Puzzle",
+    "downloadLink": "https://playdead.com",
+    "description": "Dark narrative puzzle platformer.",
+    "ratings": 4.8,
+    "developer": "Playdead"
+  },
+  {
+    "id": "52",
+    "title": "Limbo",
+    "coverPhoto": "https://example.com/limbo.png",
+    "category": "Puzzle",
+    "downloadLink": "https://playdead.com",
+    "description": "Minimalist puzzle adventure.",
+    "ratings": 4.7,
+    "developer": "Playdead"
+  },
+  {
+    "id": "53",
+    "title": "Undertale",
+    "coverPhoto": "https://example.com/undertale.png",
+    "category": "Indie",
+    "downloadLink": "https://undertale.com",
+    "description": "Story-rich indie RPG experience.",
+    "ratings": 4.9,
+    "developer": "Toby Fox"
+  },
+  {
+    "id": "54",
+    "title": "Hollow Knight",
+    "coverPhoto": "https://example.com/hollowknight.png",
+    "category": "Indie",
+    "downloadLink": "https://www.hollowknight.com",
+    "description": "Hand-drawn metroidvania adventure.",
+    "ratings": 4.9,
+    "developer": "Team Cherry"
+  },
+  {
+    "id": "55",
+    "title": "Tekken 7",
+    "coverPhoto": "https://example.com/tekken7.png",
+    "category": "Fighting",
+    "downloadLink": "https://tekken.com",
+    "description": "Competitive 3D fighting game.",
+    "ratings": 4.6,
+    "developer": "Bandai Namco"
+  },
+  {
+    "id": "56",
+    "title": "Mortal Kombat 11",
+    "coverPhoto": "https://example.com/mk11.png",
+    "category": "Fighting",
+    "downloadLink": "https://www.mortalkombat.com",
+    "description": "Brutal cinematic fighting game.",
+    "ratings": 4.7,
+    "developer": "NetherRealm Studios"
+  },
+  {
+    "id": "57",
+    "title": "Street Fighter V",
+    "coverPhoto": "https://example.com/sf5.png",
+    "category": "Fighting",
+    "downloadLink": "https://www.streetfighter.com",
+    "description": "Classic competitive fighting game.",
+    "ratings": 4.4,
+    "developer": "Capcom"
+  },
+  {
+    "id": "58",
+    "title": "Nioh 2",
+    "coverPhoto": "https://example.com/nioh2.png",
+    "category": "Action",
+    "downloadLink": "https://www.koeitecmoamerica.com",
+    "description": "Samurai action RPG combat.",
+    "ratings": 4.6,
+    "developer": "Team Ninja"
+  },
+  {
+    "id": "59",
+    "title": "Dragon Age: Inquisition",
+    "coverPhoto": "https://example.com/dragonage.png",
+    "category": "RPG",
+    "downloadLink": "https://www.ea.com",
+    "description": "Story-driven fantasy RPG.",
+    "ratings": 4.5,
+    "developer": "BioWare"
+  },
+  {
+    "id": "60",
+    "title": "No Man’s Sky",
+    "coverPhoto": "https://example.com/nomanssky.png",
+    "category": "Simulation",
+    "downloadLink": "https://www.nomanssky.com",
+    "description": "Procedural space exploration.",
+    "ratings": 4.4,
+    "developer": "Hello Games"
+  }
+
+
+
+ 
+]
