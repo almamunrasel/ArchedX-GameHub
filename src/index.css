@@ -1,8 +1,84 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 @import "tailwindcss";
 @plugin "daisyui";
 
-*{
-  font-family: "Poppins",sans-serif;
+/* Deep blue (Tailwind blue-900 inspired) */
+@plugin "daisyui/theme" {
+  name: "steam-blue";
+
+  default: true;
+
+  /* Primary UI surfaces */
+  --color-primary: #1e2a3a;
+
+  /* Accent / CTA */
+  --color-secondary: #d72050;
+
+  /* Background layers (blue-900 family) */
+  --color-base-100: #0f1b2d;   /* main background */
+  --color-base-200: #14233a;   /* sections */
+  --color-base-300: #1b2f4a;   /* cards */
+
+  /* Borders / muted elements */
+  --color-accent: #8fa4c1;
+
+  /* Text */
+  --color-base-content: #e3eaf3;
 }
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+a.active{
+  text-decoration: underline;
+}
+
+
+.input,
+.textarea,
+.select {
+  background-color: #e6edf7;   /* soft whitish-blue */
+  color: #0f1b2d;              /* deep blue text */
+  border: none;
+  border-radius: 10px;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15);
+}
+
+/* Placeholder text */
+.input::placeholder,
+.textarea::placeholder {
+  color: #6b7f99;
+}
+
+/* Focus state */
+.input:focus,
+.textarea:focus,
+.select:focus {
+  outline: 2px solid #8fa4c1;
+  outline-offset: 2px;
+  background-color: #f0f5fb;
+}
+
+/* Disabled state */
+.input:disabled,
+.textarea:disabled,
+.select:disabled {
+  background-color: #cfd8e3;
+  color: #6b7f99;
+  cursor: not-allowed;
+}
+
+/* ===============================
+   Buttons polish
+   =============================== */
+.btn {
+  border-radius: 9999px;
+  font-weight: 500;
+}
+
+.btn-secondary {
+  box-shadow: 0 4px 14px rgba(215, 32, 80, 0.4);
+}
+
