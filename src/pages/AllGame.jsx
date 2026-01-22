@@ -20,7 +20,9 @@ const AllGame = () => {
       const results = games.filter(
         (app) =>
           app.title.toLowerCase().includes(searchText.toLowerCase()) ||
-          app.developer?.toLowerCase().includes(searchText.toLowerCase())
+          app.developer?.toLowerCase().includes(searchText.toLowerCase()) ||
+          app.category?.toLowerCase().includes(searchText.toLowerCase())
+          
       );
       setFilteredApps(results);
       setPage(1);
@@ -52,40 +54,40 @@ const AllGame = () => {
         </p>
       </div>
         {/* Search and count */}
-      <div className="flex justify-between items-center mt-10">
+      <div className="flex flex-col-reverse gap-4 md:flex-row justify-between items-center  mt-10">
         <div>
           <p className="font-semibold text-xl">{filteredApps.length} Games Found</p>
         </div>
-        <div className="relative">
-          <label className="input">
-            <svg
-              className="h-[1em] opacity-50"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-            >
-              <g
-                strokeLinejoin="round"
-                strokeLinecap="round"
-                strokeWidth="2.5"
-                fill="none"
-                stroke="currentColor"
-              >
-                <circle cx="11" cy="11" r="8"></circle>
-                <path d="m21 21-4.3-4.3"></path>
-              </g>
-            </svg>
-            <input
-              type="search"
-              placeholder="Search  by name or company..."
-              value={searchText}
-              onChange={(e) => setSearchText(e.target.value)}
-              className="pl-2"
-            />
-          </label>
+        <div className="relative  w-full max-w-100 "> 
+              {/* Added w-full and max-w-2xl to make it large, mx-auto to center it */}
+              <label className="input input-bordered flex items-center gap-2 w-full">
+                <svg
+                  className="h-[1em] opacity-50"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                >
+                  <g
+                    strokeLinejoin="round"
+                    strokeLinecap="round"
+                    strokeWidth="2.5"
+                    fill="none"
+                    stroke="currentColor"
+                  >
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <path d="m21 21-4.3-4.3"></path>
+                  </g>
+                </svg>
+                <input
+                  type="search"
+                  placeholder="Search game by name or company or category ..."
+                  value={searchText}
+                  onChange={(e) => setSearchText(e.target.value)}
+                  className="grow" // 'grow' ensures the input expands to show the full placeholder
+                />
+              </label>
 
-          {/* Loading indicator inside search */}
-         
-        </div>
+  {/* Loading indicator inside search */}
+       </div>
       </div>
 
        {/* Results or NotFound */}
