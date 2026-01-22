@@ -9,6 +9,9 @@ import LoginPage from "../pages/LoginPage";
 import RegistrationPage from "../pages/RegistrationPage";
 import ForgetPassword from "../pages/ForgetPassword";
 import PrivateRoute from "../Context/PrivateRoute";
+import UpdateProfile from "../pages/UpdateProfile";
+import Loading from "../pages/Loading";
+
 
 const router =createBrowserRouter([
   {
@@ -19,6 +22,7 @@ const router =createBrowserRouter([
       path:"",
       element:<Home></Home>,
       loader: ()=>fetch('/games.json'),
+      hydrateFallbackElement: <Loading></Loading>
 
     },
     {
@@ -33,8 +37,10 @@ const router =createBrowserRouter([
     {
       path:'/gameDetails/:id',
       element:<PrivateRoute><GameDetails></GameDetails></PrivateRoute>,
-       loader: ()=>fetch('/games.json'),
-    }
+      loader: ()=>fetch('/games.json'),
+      hydrateFallbackElement: <Loading></Loading>
+    },
+    
 
     ]
 
@@ -54,9 +60,17 @@ const router =createBrowserRouter([
       {
         path:'/auth/forgotpassword',
         element: <ForgetPassword></ForgetPassword>
-      }
+      },
+      {
+      path: '/auth/updateprofile',
+      element: <UpdateProfile></UpdateProfile>
+    }
       
     ]
+  },
+  {
+    path:'/*',
+    element: <h2>eroor page 404 of mine</h2>
   }
  
 ])

@@ -2,25 +2,29 @@
 import steamIcon from '../assets/steamIcon.png'
 import { Link, NavLink } from 'react-router';
 import AuthContext from '../Context/AuthContext';
-import { useContext } from 'react';
+import { useContext,  } from 'react';
 
 import userIcon from '../assets/user.png';
+import { toast } from 'react-toastify';
 
 const Navbar = () => {
 
 
   const {user,logOut} =useContext(AuthContext);
+  
 
   const handleLogOut=()=>{
     logOut()
     .then(()=>{
-      alert("you logged out succesfully")
+     toast.success('you are logged out!')
     })
     .error((error)=>{
       alert(error);
     })
 
   }
+
+  console.log(user);
  
   return (
    <div className="navbar bg-base-100 shadow-sm">
@@ -41,7 +45,7 @@ const Navbar = () => {
       </ul>
     </div>
     <img src={steamIcon} className='w-8 h-8' alt="" />
-    <a className="btn btn-ghost text-xl hover:scale-105 transition">ArcadeX</a>
+    <Link to='/' className="btn btn-ghost text-xl hover:scale-105 transition">ArcadeX</Link>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
@@ -54,17 +58,70 @@ const Navbar = () => {
   </div>
   <div className="navbar-end">
 
-     <img className='w-8 h-8 rounded-full' src={`${user?user.photoURL: userIcon}`} alt="" /> <br/>
-     {
-          user && <p>{user.email}</p>
-        }
-    {/* {user.email}
-    <NavLink to='/auth/login' className="btn hover:scale-105 transition">Login</NavLink> */}
+    
 
-     {
-          user? <button onClick={handleLogOut} className='btn btn-primary px-10'>Logout</button>:  <Link to='/auth/login' className='btn btn-primary px-10'>Login</Link>
-        }
+    
+    {
+      !user && (
+        <>
+        <img src={userIcon} alt="guest" className="w-9 h-9 rounded-full border" />
+        <Link to="/auth/login" className='btn btn-primary px-8'>Login</Link>
+        </>
+      )
+    }
+    {/* //logged in */}
+    {/* {
+      user && (
+        <p>{user.name}</p>
+      )
+    } */}
+
+    {
+      user && (
+        // <p>{user.name}</p>
+        
+
+        <div className="dropdown dropdown-end">
+      <label tabIndex={0} className="cursor-pointer">
+        <div className='flex flex-col md:flex-row items-center gap-3' >
+           <p>{user.displayName}</p>
+        <img
+          src={user.photoURL ? user.photoURL : userIcon}
+          alt="User"
+          className="w-10 h-10 rounded-full border-2 border-secondary hover:scale-105 transition"
+        />
+        </div>
+       
+      </label>
+
+      <ul
+        tabIndex={0}
+        className="dropdown-content menu p-2 shadow bg-base-200 rounded-box w-52 mt-3"
+      >
+        {/* <li className="text-xs px-2 text-accent">
+          {user.email}
+        </li> */}
+
+        <li>
+          <Link to='/auth/updateprofile'>Update Profile</Link>
+        </li>
+
+        <li>
+          <button onClick={handleLogOut} className="text-red-400">
+            Logout
+          </button>
+        </li>
+      </ul>
+    </div>
+
+      )
+    }
+    
+    
   </div>
+
+
+  
 </div>
   );
 };

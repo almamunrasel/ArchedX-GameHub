@@ -2,6 +2,7 @@ import React, {  } from 'react';
 import Navbar from '../Components/Navbar';
 import Banner from '../Components/Banner';
 import { Outlet } from 'react-router';
+import Footer from '../Components/Footer';
 
 
 
@@ -9,12 +10,22 @@ import { Outlet } from 'react-router';
 const HomeLayout = () => {
 
   return (
-    <div className='w-11/12 mx-auto'>
-      <section className='my-8'>
+    <div className=''>
+      <section className='w-11/12 mx-auto my-8'>
          <Navbar></Navbar>
 
       </section>
-      <Outlet></Outlet>
+      <main className='w-9/12 mx-auto'>
+        <Outlet></Outlet>
+
+      </main>
+
+      <footer>
+        <Footer></Footer>
+      </footer>
+      
+
+     
 
      
      
