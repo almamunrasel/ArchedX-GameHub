@@ -10,7 +10,8 @@ const LoginPage = () => {
   const [show,setShow]=useState(false);
   const [error,setError]=useState('');
   const [success,setSuccess]=useState('')
-  const {signIn,}=useContext(AuthContext);
+    
+  const {signIn,googleSignIn}=useContext(AuthContext);
   const navigate=useNavigate();
 
   const handleLogin=(e)=>{
@@ -31,6 +32,19 @@ const LoginPage = () => {
       setError(errorMessage);
     })
 
+  }
+
+  const handleGoogleSignIn=()=>{
+    googleSignIn()
+    .then(res=>{
+      toast.success('congratulations you logged in successfully',res.user.displayName);
+       navigate(`${location.state?location.state : "/"}`)
+    })
+    .catch(error=>{
+      alert(error.message);
+    })
+
+    
   }
 
 
@@ -69,7 +83,10 @@ const LoginPage = () => {
           success && <p className='text-green-400'> {success}</p>
               }
             </form>
-            <button type='submit'  className="btn btn-neutral mt-4"> <FcGoogle /> Login With Google</button>
+            <div className='px-2 flex justify-center'>
+              <button onClick={handleGoogleSignIn} type='submit'  className="btn btn-neutral  "> <FcGoogle /> Sign In With Google</button>
+            </div>
+            
           </div>
     </div>
   );
