@@ -8,6 +8,7 @@ import { CiHome } from "react-icons/ci";
 import userIcon from '../assets/user.png';
 import { toast } from 'react-toastify';
 import Loading from '../pages/Loading';
+import { motion, AnimatePresence } from "framer-motion";
 
 const Navbar = () => {
 
@@ -67,10 +68,22 @@ const Navbar = () => {
     
     {
       !user && (
-        <>
-        <img src={userIcon} alt="guest" className="w-9 h-9 rounded-full border" />
-        <Link to="/auth/login" className='btn btn-primary px-8'>Login</Link>
-        </>
+        <div className='flex gap-2'>
+
+          <img src={userIcon} alt="guest" className="w-9 h-9 rounded-full border " />
+        <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              type="submit"
+              className="btn btn-secondary px-8"
+            >
+              <Link to="/auth/login" className='btn ml-2 px-4'>Login</Link>
+               </motion.button>
+
+        </div>
+        
+        
+        
       )
     }
     {/* //logged in */}

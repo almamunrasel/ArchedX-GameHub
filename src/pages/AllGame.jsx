@@ -54,7 +54,7 @@ const AllGame = () => {
         {/* Search and count */}
       <div className="flex justify-between items-center mt-10">
         <div>
-          <p className="font-semibold text-xl">{filteredApps.length} Apps Found</p>
+          <p className="font-semibold text-xl">{filteredApps.length} Games Found</p>
         </div>
         <div className="relative">
           <label className="input">
@@ -76,10 +76,10 @@ const AllGame = () => {
             </svg>
             <input
               type="search"
-              placeholder="Search Apps..."
+              placeholder="Search  by name or company..."
               value={searchText}
               onChange={(e) => setSearchText(e.target.value)}
-              className="pl-8"
+              className="pl-2"
             />
           </label>
 

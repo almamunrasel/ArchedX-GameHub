@@ -5,6 +5,7 @@ import { toast } from 'react-toastify';
 import { FaEyeSlash } from 'react-icons/fa';
 import { PiEyesBold } from 'react-icons/pi';
 import { FcGoogle } from "react-icons/fc";
+import { motion, AnimatePresence } from "framer-motion";
 
 const LoginPage = () => {
   const [show,setShow]=useState(false);
@@ -49,6 +50,12 @@ const LoginPage = () => {
 
 
   return (
+    <motion.div
+      initial={{ scale: 0.8, opacity: 0 }}
+      whileInView={{ scale: 1, opacity: 1 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.6, ease: "easeOut" }}
+    >
     <div className='flex justify-center items-center '>
         <div className="card bg-base-200 w-full max-w-sm shrink-0 shadow-2xl py-5  ">
             <h2 className='font-semibold text-2xl text-center'>Login Your account</h2>
@@ -89,6 +96,7 @@ const LoginPage = () => {
             
           </div>
     </div>
+    </motion.div>
   );
 };
 

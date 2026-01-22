@@ -1,10 +1,13 @@
 import React, { useContext, useState } from 'react';
 import { FaEyeSlash } from 'react-icons/fa';
 import { PiEyesBold } from 'react-icons/pi';
-import { Link } from 'react-router';
+import { Link, useNavigate } from 'react-router';
 import AuthContext from '../Context/AuthContext';
+import { motion, AnimatePresence } from "framer-motion";
 
 const RegistrationPage = () => {
+
+  const navigate=useNavigate();
   const {createUser} = useContext(AuthContext);
   const [error,setError] = useState('');
   const [success,setSuccess]=useState('');
@@ -39,9 +42,11 @@ const RegistrationPage = () => {
       
       setSuccess(true);
       e.target.reset();
+      navigate('/');
+
 
     })
-    .then(error=>{
+    .catch(error=>{
       setError(error.message);
     })
 
@@ -49,6 +54,12 @@ const RegistrationPage = () => {
 
   }
   return (
+    <motion.div
+      initial={{ scale: 0.8, opacity: 0 }}
+      whileInView={{ scale: 1, opacity: 1 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.6, ease: "easeOut" }}
+    >
    <div className='flex justify-center  items-center '>
          <div className="card bg-base-200 w-full max-w-sm shrink-0 shadow-2xl py-5">
           <h2 className='font-semibold text-2xl text-center'>Register Your account</h2>
@@ -108,6 +119,7 @@ const RegistrationPage = () => {
             </form>
           </div>
       </div>
+      </motion.div>
   );
 };
 

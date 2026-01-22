@@ -1,6 +1,7 @@
 import React, {  useState } from 'react';
 import { Link } from 'react-router';
 import PopularGames from './PopularGames';
+import { motion, AnimatePresence } from "framer-motion";
 
 
 
@@ -28,6 +29,13 @@ const Banner = ({games}) => {
   
 
    return (
+
+    <motion.div
+      initial={{ scale: 0.8, opacity: 0 }}
+      whileInView={{ scale: 1, opacity: 1 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.6, ease: "easeOut" }}
+    >
      <div className="flex gap-15 relative md:flex-row flex-col  ">
       {/* Main Featured Image */}
       <div className="flex-1 relative hover:scale-105 transition ">
@@ -92,6 +100,7 @@ const Banner = ({games}) => {
         </div>
       </div>
     </div>
+    </motion.div>
    
   );
    
