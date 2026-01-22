@@ -29,7 +29,7 @@ const Navbar = () => {
 
   console.log(user);
 
-  if(loading) return(<Loading></Loading>)
+  if(loading) return (<Loading></Loading>)
  
   return (
    <div className="navbar bg-base-100 shadow-sm">

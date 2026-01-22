@@ -8,7 +8,7 @@ import { motion, AnimatePresence } from "framer-motion";
 const RegistrationPage = () => {
 
   const navigate=useNavigate();
-  const {createUser} = useContext(AuthContext);
+  const {createUser,setLoading} = useContext(AuthContext);
   const [error,setError] = useState('');
   const [success,setSuccess]=useState('');
   const [show,setShow]=useState(false);
@@ -49,6 +49,7 @@ const RegistrationPage = () => {
     .catch(error=>{
       setError(error.message);
     })
+    .finally(() => setLoading(false))
 
 
 

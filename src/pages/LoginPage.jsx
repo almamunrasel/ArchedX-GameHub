@@ -12,7 +12,7 @@ const LoginPage = () => {
   const [error,setError]=useState('');
   const [success,setSuccess]=useState('')
     
-  const {signIn,googleSignIn}=useContext(AuthContext);
+  const {signIn,googleSignIn,setLoading}=useContext(AuthContext);
   const navigate=useNavigate();
 
   const handleLogin=(e)=>{
@@ -32,6 +32,7 @@ const LoginPage = () => {
       const errorMessage=error.message
       setError(errorMessage);
     })
+    .finally(() => setLoading(false))
 
   }
 
