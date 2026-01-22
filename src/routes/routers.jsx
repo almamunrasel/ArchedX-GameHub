@@ -11,6 +11,7 @@ import ForgetPassword from "../pages/ForgetPassword";
 import PrivateRoute from "../Context/PrivateRoute";
 import UpdateProfile from "../pages/UpdateProfile";
 import Loading from "../pages/Loading";
+import ErrorPage from "../pages/ErrorPage";
 
 
 const router =createBrowserRouter([
@@ -27,7 +28,9 @@ const router =createBrowserRouter([
     },
     {
     path:'/allgames',
-    element: <AllGame></AllGame>
+    element: <AllGame></AllGame>,
+    loader: ()=>fetch('/games.json'),
+    hydrateFallbackElement: <Loading></Loading>
     },
     {
       path:'/installedGame',
@@ -70,7 +73,7 @@ const router =createBrowserRouter([
   },
   {
     path:'/*',
-    element: <h2>eroor page 404 of mine</h2>
+    element: <ErrorPage></ErrorPage>
   }
  
 ])

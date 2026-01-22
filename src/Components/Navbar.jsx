@@ -3,14 +3,16 @@ import steamIcon from '../assets/steamIcon.png'
 import { Link, NavLink } from 'react-router';
 import AuthContext from '../Context/AuthContext';
 import { useContext,  } from 'react';
+import { CiHome } from "react-icons/ci";
 
 import userIcon from '../assets/user.png';
 import { toast } from 'react-toastify';
+import Loading from '../pages/Loading';
 
 const Navbar = () => {
 
 
-  const {user,logOut} =useContext(AuthContext);
+  const {user,logOut,loading} =useContext(AuthContext);
   
 
   const handleLogOut=()=>{
@@ -25,6 +27,8 @@ const Navbar = () => {
   }
 
   console.log(user);
+
+  if(loading) return(<Loading></Loading>)
  
   return (
    <div className="navbar bg-base-100 shadow-sm">
@@ -36,7 +40,7 @@ const Navbar = () => {
       <ul
         tabIndex="-1"
         className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-        <li><NavLink  to='/'>Home</NavLink></li>
+        <li><NavLink  to='/'>  Home</NavLink></li>
         <li>
           <NavLink to='/allgames'>All Games</NavLink>
           
