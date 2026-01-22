@@ -5,12 +5,19 @@ import { initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyDSaU9iYx43LRVyGMGkNQ1BO4rH_fF1C7E",
-  authDomain: "arcadex-gamehub.firebaseapp.com",
-  projectId: "arcadex-gamehub",
-  storageBucket: "arcadex-gamehub.firebasestorage.app",
-  messagingSenderId: "401567256586",
-  appId: "1:401567256586:web:de682bf56a85650a158ff3"
+  // apiKey: 
+  // authDomain: 
+  // projectId: 
+  // storageBucket: 
+  // messagingSenderId: 
+  // appId: 
+
+  apiKey:import.meta.env.VITE_apiKey,
+  authDomain:import.meta.env.VITE_authDomain,
+  projectId:import.meta.env.VITE_projectId,
+  storageBucket:import.meta.env.VITE_storageBucket,
+  messagingSenderId:import.meta.env.VITE_messagingSenderId,
+  appId:import.meta.env.VITE_appId,
 };
 
 // Initialize Firebase

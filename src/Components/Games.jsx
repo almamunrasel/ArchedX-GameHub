@@ -4,7 +4,7 @@ import { Link } from 'react-router';
 import { motion, AnimatePresence } from "framer-motion"
 
 const Games = ({data}) => {
-  console.log('this is games page',data);
+  // console.log('this is games page',data);
 
 
   return (

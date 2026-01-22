@@ -27,7 +27,7 @@ const Navbar = () => {
 
   }
 
-  console.log(user);
+  // console.log(user);
 
   if(loading) return (<Loading></Loading>)
  

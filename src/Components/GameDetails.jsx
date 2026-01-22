@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 const GameDetails = () => {
   const {id}=useParams();
   const games=useLoaderData();
-  console.log(id,games);
+  // console.log(id,games);
 
   const game=games.find(singlegame=>singlegame.id == id);
   

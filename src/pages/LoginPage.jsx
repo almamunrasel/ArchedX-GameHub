@@ -22,7 +22,7 @@ const LoginPage = () => {
     signIn(email,password)
     .then((res=>{
       const user=res.user;
-      console.log(user);
+      // console.log(user);
       setSuccess('congratulations you logged in successfully');
       toast.success("Login successful!");
       e.target.reset();
