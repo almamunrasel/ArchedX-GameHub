@@ -5,12 +5,14 @@ import AuthContext from '../Context/AuthContext';
 import AliveLoader from '../Components/AliveLoader';
 import Games from '../Components/Games';
 import NotFound from './NotFound';
+const ITEMS_PER_PAGE = 12;
 
 const AllGame = () => {
   const games=useLoaderData();
   const [pageloading,setPageLoading]=useState(false);
   const [searchText, setSearchText] = useState('');
   const [filteredApps, setFilteredApps] = useState(games);
+  const [page,setPage]=useState(1);
    useEffect(() => {
     setPageLoading(true);
 
@@ -18,16 +20,20 @@ const AllGame = () => {
       const results = games.filter(
         (app) =>
           app.title.toLowerCase().includes(searchText.toLowerCase()) ||
-          app.companyName?.toLowerCase().includes(searchText.toLowerCase())
+          app.developer?.toLowerCase().includes(searchText.toLowerCase())
       );
       setFilteredApps(results);
+      setPage(1);
       setPageLoading(false);
     }, 300); // small delay for smoother animation
 
     return () => clearTimeout(timer);
   }, [searchText, games]);
 
-  console.log("this is from all game page",filteredApps);
+  // console.log("this is from all game page",filteredApps);
+  const totalPages = Math.ceil(filteredApps.length / ITEMS_PER_PAGE);
+  const start = (page - 1) * ITEMS_PER_PAGE;
+  const currentGames = filteredApps.slice(start, start + ITEMS_PER_PAGE);
   
  
   return (
@@ -87,7 +93,24 @@ const AllGame = () => {
         {filteredApps.length === 0 ? (
           <NotFound onShowAll={() => setSearchText('')} />
         ) : (
-          <Games data={filteredApps} />
+          <>
+          <Games data={currentGames} />
+          <div className="flex justify-center gap-2 mt-10">
+              {[...Array(totalPages).keys()].map(i => (
+                <button
+                  key={i}
+                  className={`btn btn-sm ${
+                    page === i + 1 ? "btn-secondary" : "btn-outline"
+                  }`}
+                  onClick={() => setPage(i + 1)}
+                >
+                  {i + 1}
+                </button>
+              ))}
+            </div>
+
+          </>
+          
         )}
       </div>
 

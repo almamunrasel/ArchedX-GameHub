@@ -1,7 +1,7 @@
 [
   { "id": "1", "title": "Call of Duty: Warzone", "coverPhoto": "https://i.ibb.co.com/0yQwjDP6/Call-of-Duty-Infinite-Warfare-cover.jpg", "category": "Battle Royale", "downloadLink": "https://www.pubgmobile.com", "description": "Battle royale survival shooter.", "ratings": 4.5, "developer": "Krafton" },
 
-  { "id": "2", "title": "PUBG Mobile", "coverPhoto": "https://i.ibb.co.com/RkJgtPSJ/Call-of-Duty-Modern-Warfare-2019-cover.jpg", "category": "FPS", "downloadLink": "https://www.callofduty.com/warzone", "description": "Large-scale FPS battle royale.", "ratings": 4.6, "developer": "Activision" },
+  { "id": "2", "title": "PUBG Mobile", "coverPhoto": "https://i.ibb.co.com/7x1qzz2b/dfsfed.jpg", "category": "FPS", "downloadLink": "https://www.callofduty.com/warzone", "description": "Large-scale FPS battle royale.", "ratings": 4.6, "developer": "Activision" },
 
   { "id": "3", "title": "Apex Legends", "coverPhoto": "https://i.ibb.co.com/5hXGsF0Q/call-of-duty-mobile-hero-a.jpg", "category": "Battle Royale", "downloadLink": "https://www.ea.com/games/apex-legends", "description": "Fast-paced hero battle royale.", "ratings": 4.7, "developer": "Respawn Entertainment" },
 
@@ -21,7 +21,7 @@
 
   { "id": "11", "title": "Red Dead Redemption 2", "coverPhoto": "https://i.ibb.co.com/0yQwjDP6/Call-of-Duty-Infinite-Warfare-cover.jpg", "category": "Adventure", "downloadLink": "https://www.rockstargames.com", "description": "Story-rich western adventure.", "ratings": 4.9, "developer": "Rockstar Games" },
 
-  { "id": "12", "title": "GTA V", "coverPhoto": "https://i.ibb.co.com/RkJgtPSJ/Call-of-Duty-Modern-Warfare-2019-cover.jpg", "category": "Action", "downloadLink": "https://www.rockstargames.com", "description": "Open-world crime action game.", "ratings": 4.8, "developer": "Rockstar Games" },
+  { "id": "12", "title": "GTA V", "coverPhoto": "https://i.ibb.co.com/7x1qzz2b/dfsfed.jpg", "category": "Action", "downloadLink": "https://www.rockstargames.com", "description": "Open-world crime action game.", "ratings": 4.8, "developer": "Rockstar Games" },
 
   { "id": "13", "title": "Forza Horizon 5", "coverPhoto": "https://i.ibb.co.com/5hXGsF0Q/call-of-duty-mobile-hero-a.jpg", "category": "Racing", "downloadLink": "https://forzamotorsport.net", "description": "Open-world racing experience.", "ratings": 4.7, "developer": "Playground Games" },
 

@@ -62,13 +62,14 @@ const LoginPage = () => {
                 }
                
                 <button type='submit'  className="btn btn-neutral mt-4">Login</button>
-                 <button type='submit'  className="btn btn-neutral mt-4"> <FcGoogle /> Login With Google</button>
-                <p className='font-semibold text-center pt-5'>Dont’t Have An Account ? <Link to='/auth/registration' className='text-secondary hover:underline'>Register</Link> </p>
+                 
+                <p className='font-semibold text-center pt-5'>Dont’t Have An Account ? <Link to='/auth/registration' className='text-secondary hover:underline'>Register</Link> or </p>
               </fieldset>
               {
           success && <p className='text-green-400'> {success}</p>
               }
             </form>
+            <button type='submit'  className="btn btn-neutral mt-4"> <FcGoogle /> Login With Google</button>
           </div>
     </div>
   );
