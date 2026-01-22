@@ -2,6 +2,7 @@ import React, {} from 'react';
 import Banner from '../Components/Banner';
 import PopularGames from '../Components/PopularGames';
 import { Link, useLoaderData } from 'react-router';
+import Newsletter from './Newsletter';
 
 
 const Home = () => {
@@ -25,6 +26,10 @@ const Home = () => {
           popularGames.map(popularGame=> <Link to={`/gameDetails/${popularGame.id}`}><PopularGames key={popularGame.id} popularGame={popularGame}></PopularGames></Link>)
           
           }
+
+        </div>
+        <div className='mt-10'>
+          <Newsletter></Newsletter>
 
         </div>
         
